@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongbaoActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/capnhat"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_capnhat"
+            android:text="Cập nhật"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:id="@+id/tinnhan"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_tinnhan"
+            android:gravity="center"
+            android:text="Tin nhắn"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:text="Bạn có 15 ghim mới dang chờ"/>
+    <TextView
+        android:id="@+id/texttg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text"
+        android:layout_below="@id/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="1 giờ"/>
+    <LinearLayout
+        android:id="@+id/ha"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hinh1" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hinh2" />
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hinh3"/>
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/text1"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ha"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Các tìm kiếm mang tính xu hướng"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text1"
+        android:layout_below="@id/ha"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="7 giờ"/>
+    <LinearLayout
+        android:layout_below="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hinh1" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hinh2" />
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hinh3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_menu"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/home" />
+        >
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_search">
+
+        </Button>
+
+        <Button
+
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_comment" />
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_avatar" />
+    </LinearLayout>
+
+</RelativeLayout>
